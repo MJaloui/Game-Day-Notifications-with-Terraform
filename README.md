@@ -96,16 +96,3 @@ cd game-day-notifications
 
 🔹 Integrate advanced analytics to provide personalized game insights.
 
----
-
-## **🧠 What I Learned 🧠**
-
-🔹 Designing a notification system with AWS SNS and Lambda.
-
-🔹 Securing AWS services with least privilege IAM policies.
-
-🔹 Automating workflows using EventBridge.
-
-🔹 Integrating external APIs into cloud-based workflows.
-
-🔹 Automated the entire solution with Infrastructure as Code tool Terraform.
