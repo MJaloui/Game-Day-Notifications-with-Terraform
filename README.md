@@ -12,8 +12,6 @@
 
 ## **🔧 Capabilities 🔧**
 
-**The Game Day Notifications -W- Terraform performs the following actions:**
-
 🔹 Fetches live NBA game scores using the SportsData.io API.
 
 🔹 Sends formatted score updates to subscribed users via SMS/Email using Amazon SNS.
@@ -56,77 +54,23 @@
 
 ### **Steps:** ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/your-repository/Link-to-VisualStepsHere) ❗⬅️
 
-1. **Clone the Repository:**
+1. Clone this Repository:
 
-    ```bash
-    git clone https://github.com/ifeanyiro9/game-day-notifications.git
-    cd game-day-notifications
-    ```
+```bash
+git clone https://github.com/ifeanyiro9/game-day-notifications.git
+cd game-day-notifications
+```
 
-2. **Store API Key as Secret in Parameter Store:**
+2. Store API Key as Secret in Parameter Store.
 
-    1. Run the AWS CLI command with your API key to store it in Parameter Store:
+3. Run Terraform Commands:
 
-3. **Run Terraform Commands:**
+    - Initialize, Format, Check Terraform, Show preview of changes. Create or update the infrastructure, and Remove all resources.
+      
 
-    1. **Initialize Terraform directory, provider plugins, and set up the local backend:**
-        ```bash
-        terraform init
-        ```
-
-    2. **Format Terraform config files to make them clean, readable, and follow best practices:**
-        ```bash
-        terraform fmt
-        ```
-
-    3. **Check Terraform configuration for syntax errors and correctness:**
-        ```bash
-        terraform validate
-        ```
-
-    4. **Show preview of changes Terraform will make to your infrastructure before applying them:**
-        ```bash
-        terraform plan
-        ```
-
-    5. **Create or update the infrastructure based on the Terraform configuration:**
-        ```bash
-        terraform apply
-        ```
-
-    6. **Remove all resources defined in your Terraform configuration:**
-        ```bash
-        terraform destroy
-        ```
-
-4. **Add Subscriptions to the SNS Topic:**
-
-    1. After creating the SNS topic, head to the **SNS topic name**.
-    
-    2. Navigate to the **Subscriptions** tab and click **Create subscription**.
-    
-    3. **Select a Protocol:**
-
-        - For **Email**:
-            - Choose **Email**.
-            - Enter a valid email address.
+4. Add Subscriptions to the SNS Topic.
         
-        - For **SMS (phone number)**:
-            - Choose **SMS**.
-            - Enter a valid phone number in international format (e.g., +1234567890).
-
-    4. Click **Create Subscription**.
-
-    5. **If you added an Email subscription:**
-        - Check the inbox of the provided email address.
-        - Confirm the subscription by clicking the confirmation link in the email.
-
-5. **Test the System:**
-
-    1. Open the Lambda function in the AWS Management Console.
-    2. Create a test event to simulate execution.
-    3. Run the function and check **CloudWatch Logs** for errors.
-    4. Verify that SMS notifications are sent to the subscribed users.
+5. Test the System.
 
 ---
 
