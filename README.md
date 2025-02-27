@@ -52,7 +52,9 @@
 
 ---
 
-### **Steps:** ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/your-repository/Link-to-VisualStepsHere) ❗⬅️
+### **Steps:** ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/MJaloui/Game-Day-Notifications--w--Terraform/blob/main/VisualStepsHere) ❗⬅️
+
+https://github.com/MJaloui/Game-Day-Notifications--w--Terraform/blob/main/VisualStepsHere
 
 1. Clone this Repository:
 
