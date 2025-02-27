@@ -65,7 +65,7 @@ cd game-day-notifications
 
 3. Run Terraform Commands:
 
-    - Initialize, Format, Check Terraform, Show preview of changes. Create or update the infrastructure, and Remove all resources.
+    - Initialize, format, check Terraform, show preview of changes, create or update the infrastructure, and remove all resources.
       
 
 4. Add Subscriptions to the SNS Topic.
