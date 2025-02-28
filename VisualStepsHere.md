@@ -213,16 +213,14 @@ terraform destory
 
 ![image](https://github.com/user-attachments/assets/abf562ee-eeba-44f4-b189-5afc1fd9dab5)
 
-![image](https://github.com/user-attachments/assets/5ceee3a0-0688-4db9-84b9-a7e022e70d6f)
 
- - Notice all rources that are being deleted will display below. Verify the resources before deleting.
 
+ - Notice all resources that are being deleted will display below. Verify the resources before deleting.
+
+![image](https://github.com/user-attachments/assets/488d02de-ae80-4fc8-ad6e-a666abb35a43)
 
 
   - To cofirm deleting the resources, enter the value "yes". 
-
-
-
 
 ![image](https://github.com/user-attachments/assets/9629de58-6e7d-4240-be8d-79e400709769)
 
