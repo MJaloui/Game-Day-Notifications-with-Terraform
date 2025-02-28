@@ -159,6 +159,9 @@ terraform plan
 terraform apply
 ```
 
+![image](https://github.com/user-attachments/assets/77e9a1bf-d313-4422-8359-74094e957da8)
+
+
 
 ### **Add Subscriptions to the SNS Topic**
 1. After creating the topic, head on the SNS topic name.
@@ -213,8 +216,7 @@ terraform destory
 ![image](https://github.com/user-attachments/assets/5ceee3a0-0688-4db9-84b9-a7e022e70d6f)
 
  - Notice all rources that are being deleted will display below. Verify the resources before deleting.
-   
-![image](https://github.com/user-attachments/assets/77e9a1bf-d313-4422-8359-74094e957da8)
+
 
 
   - To cofirm deleting the resources, enter the value "yes". 
