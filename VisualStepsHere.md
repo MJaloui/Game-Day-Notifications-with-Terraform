@@ -205,7 +205,6 @@ terraform apply
 
 6. Remove all resources defined in your Terraform configuration.
 
-  - Enter the value "yes" to confirm deleting all the resources.
     
 ```bash
 terraform destory
@@ -220,7 +219,7 @@ terraform destory
 ![image](https://github.com/user-attachments/assets/488d02de-ae80-4fc8-ad6e-a666abb35a43)
 
 
-  - To cofirm deleting the resources, enter the value "yes". 
+  - Enter the value "yes" to confirm deleting all the resources.
 
 ![image](https://github.com/user-attachments/assets/9629de58-6e7d-4240-be8d-79e400709769)
 
