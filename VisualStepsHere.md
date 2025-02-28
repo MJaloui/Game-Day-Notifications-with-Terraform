@@ -16,7 +16,7 @@
 &nbsp;
 
 
-### **Clone this Repository and go to Game Day Notifications directory **
+### **Clone this Repository and go to Game Day Notifications directory**
 
 ```bash
 git clone https://github.com/MJaloui/game-day-notifications--w--Terraform.git
@@ -61,13 +61,13 @@ sudo mv terraform /usr/local/bin/
 
 
 
-### ** Verfiy if you have AWS CLI installed using the "version command"**
+### ** Verfiy if you have AWS CLI installed using the "version" command**
 
 ![image](https://github.com/user-attachments/assets/d1dc16e9-d75c-4615-92fb-1c56f3cba5c4)
 
 
 
-### **If AWS CLI is not installed, you will not see any output. Use the "Pip install" command to install AWS CLI.
+### **If AWS CLI is not installed, you will not see any output. Use the "Pip install" command to install AWS CLI.**
 
 
 ```bash
@@ -100,34 +100,81 @@ aws configure
 1. Run this aws cli command with your api key to store it in Paremeter store
    
 ```bash
-aws ssm put-parameter --name "nba-api-key" --value "<API_KEY>" --type "SecureString"
+aws ssm put-parameter --name "nba-api-key" --value "<Your_API_KEY_Here>" --type "SecureString"
 ```
+![image](https://github.com/user-attachments/assets/9f402d6a-411e-4c5f-8b32-e364b59ceb07)
+
 
 ### **Run Terraform commands**
 1. Initialize Terraform directory, provider plugins and set up local backend
+   
 ```bash
 terraform init
 ```
+
+![image](https://github.com/user-attachments/assets/57fa27f0-4a22-427e-89a0-640510ae308e)
+
+![image](https://github.com/user-attachments/assets/64d11d80-ada5-4faf-903b-30388bd2093c)
+
+
+
 2. Format Terraform config files to make it clean, readable, and follow best practices.
+
 ```bash
 terraform fmt
 ```
-3. Check Terraform configuration for syntax errors and correctness
+
+![image](https://github.com/user-attachments/assets/c6efebef-b359-4883-8aee-ef7a947b0a2d)
+
+
+
+3. Validate Terraform configuration for syntax errors and if it's correct.
+
 ```bash
 terraform validate
 ```
+
+![image](https://github.com/user-attachments/assets/9cc9f06e-98b9-46bc-8040-79464868231d)
+
+
 4. Show preview of changes Terraform will make to your infrastructure before applying them
+
+  - You will be able to see what actions Terraform will perform.
+
 ```bash
 terraform plan
 ```
+
+![image](https://github.com/user-attachments/assets/5766ab43-9bdd-482e-8bc3-b73a159f301d)
+
+![image](https://github.com/user-attachments/assets/d6d18adb-27c3-4362-ae8c-f6c327521fdd)
+
+
+
+
 5. Create or update the infrastructure based on the Terraform configuration.
+
+  - Enter the Value "yes"
+
 ```bash
 terraform apply
 ```
+
+![image](https://github.com/user-attachments/assets/77e9a1bf-d313-4422-8359-74094e957da8)
+
+![image](https://github.com/user-attachments/assets/9629de58-6e7d-4240-be8d-79e400709769)
+
+
+
+
 6. Remove all resources defined in your Terraform configuration.
+
 ```bash
 terraform destory
 ```
+
+
+
 
 ### **Add Subscriptions to the SNS Topic**
 1. After creating the topic, head on the SNS topic name.
