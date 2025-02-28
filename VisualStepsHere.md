@@ -9,16 +9,12 @@
 &nbsp;
 
 
-
 ## **Steps To Prerequisites:**
 
 &nbsp;
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
 
 ### **Clone this Repository and go to Game Day Notifications directory **
 
@@ -88,6 +84,9 @@ aws configure
 
 ![image](https://github.com/user-attachments/assets/974a2958-7609-4e61-84e7-ecf249a8b55d)
 
+&nbsp;
+
+&nbsp;
 
 ### **Steps to project:**
 
@@ -95,9 +94,6 @@ aws configure
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
 
 ### **Store API Key as secret in Parameter store**
 
