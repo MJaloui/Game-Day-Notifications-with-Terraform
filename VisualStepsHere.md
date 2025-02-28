@@ -164,8 +164,21 @@ terraform apply
 
 
 ### **Add Subscriptions to the SNS Topic**
-1. After creating the topic, head on the SNS topic name.
+1. After creating the topic, sign into AWS and head on the SNS topic name.
+
+   ![image](https://github.com/user-attachments/assets/15489f06-9059-4862-a2b2-02415e4ef8bc)
+
+![image](https://github.com/user-attachments/assets/e9ff2444-3449-4b61-8b52-7dd8a9bd8a95)
+
+![image](https://github.com/user-attachments/assets/fee1a23a-6b0e-4c9b-bfd4-56a5ffb52f35)
+
+
 2. Navigate to the Subscriptions tab and click Create subscription.
+
+![image](https://github.com/user-attachments/assets/665413fc-21f1-471f-a13a-3ad3856b5997)
+
+
+
 3. Select a Protocol:
 - For Email:
   - Choose Email.
