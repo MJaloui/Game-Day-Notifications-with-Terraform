@@ -10,16 +10,99 @@
 
 
 
-## **Steps:**
+## **Steps To Prerequisites:**
 
-### **Clone the Repository**
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+### **Clone this Repository and go to Game Day Notifications directory **
+
 ```bash
 git clone https://github.com/MJaloui/game-day-notifications--w--Terraform.git
-cd game-day-notifications
+cd game-day-notifications--w--Terraform
 ```
 
+
+### **Download Terraform if you don't have this tool**
+
+  - **To verify if you have Terraform, use the "version" command.**
+
+```bash
+terraform --version
+```
+
+![image](https://github.com/user-attachments/assets/22ba24f3-1219-4466-9d52-08eb6fada2de)
+
+    
+  - **If no output is displayed, then it's not installed. Use wget command to install Terraform.**
+    (you can research the latest version online and change the version in the command)
+
+```bash 
+wget https://releases.hashicorp.com/terraform/1.4.5/terraform_1.10.5_linux_amd64.zip
+```
+
+![image](https://github.com/user-attachments/assets/67bdd9c6-a21b-453c-9cf9-c704a47581e2)
+
+
+### **Extract the Terraform binary from the downloaded ZIP file using unzip command**
+
+```bash
+unzip terraform_1.4.5_linux_amd64.zip
+```
+
+### **Move it to /usr/local/bin/ with the "mv" (move) command to make it globally accessible from any terminal session**
+
+```bash
+sudo mv terraform /usr/local/bin/
+```
+
+![image](https://github.com/user-attachments/assets/a8f17475-6ab3-4709-9a87-ba653c32d473)
+
+
+
+### ** Verfiy if you have AWS CLI installed using the "version command"**
+
+![image](https://github.com/user-attachments/assets/d1dc16e9-d75c-4615-92fb-1c56f3cba5c4)
+
+
+
+### **If AWS CLI is not installed, you will not see any output. Use the "Pip install" command to install AWS CLI.
+
+
+```bash
+pip install aws cli
+```
+
+### **Configure AWS if you had to install Terraform or AWS CLI**
+
+    - The information needed can be found in your AWS account, you may need to create a Secret Access Key if you don't already have one. Input "json" for your format.
+
+```bash
+aws configure
+```
+
+![image](https://github.com/user-attachments/assets/974a2958-7609-4e61-84e7-ecf249a8b55d)
+
+
+### **Steps to project:**
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 ### **Store API Key as secret in Parameter store**
+
 1. Run this aws cli command with your api key to store it in Paremeter store
+   
 ```bash
 aws ssm put-parameter --name "nba-api-key" --value "<API_KEY>" --type "SecureString"
 ```
