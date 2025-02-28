@@ -154,26 +154,10 @@ terraform plan
 
 5. Create or update the infrastructure based on the Terraform configuration.
 
-  - Enter the Value "yes"
 
 ```bash
 terraform apply
 ```
-
-![image](https://github.com/user-attachments/assets/77e9a1bf-d313-4422-8359-74094e957da8)
-
-![image](https://github.com/user-attachments/assets/9629de58-6e7d-4240-be8d-79e400709769)
-
-
-
-
-6. Remove all resources defined in your Terraform configuration.
-
-```bash
-terraform destory
-```
-
-
 
 
 ### **Add Subscriptions to the SNS Topic**
@@ -202,4 +186,43 @@ terraform destory
 
 
 
+
+
+
+
+
+
+
+
+
+
+*******************************************************************8
+
+
+
+6. Remove all resources defined in your Terraform configuration.
+
+  - Enter the value "yes" to confirm deleting all the resources.
+    
+```bash
+terraform destory
+```
+
+![image](https://github.com/user-attachments/assets/abf562ee-eeba-44f4-b189-5afc1fd9dab5)
+
+![image](https://github.com/user-attachments/assets/5ceee3a0-0688-4db9-84b9-a7e022e70d6f)
+
+ - Notice all rources that are being deleted will display below. Verify the resources before deleting.
+   
+![image](https://github.com/user-attachments/assets/77e9a1bf-d313-4422-8359-74094e957da8)
+
+
+  - To cofirm deleting the resources, enter the value "yes". 
+
+
+
+
+![image](https://github.com/user-attachments/assets/9629de58-6e7d-4240-be8d-79e400709769)
+
+![image](https://github.com/user-attachments/assets/774d3aa6-ff49-45fa-a7b5-019502d968fe)
 
