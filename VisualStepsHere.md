@@ -270,7 +270,7 @@ terraform apply
 
 5. Verify that SMS notifications are sent to the subscribed users.
 
-
+![image](https://github.com/user-attachments/assets/cfbc0dbb-6892-41ab-9b79-74aac072eb40)
 
 
 
