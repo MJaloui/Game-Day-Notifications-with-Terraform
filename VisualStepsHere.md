@@ -97,6 +97,10 @@ aws configure
 
 ### **Store API Key as secret in Parameter store**
 
+&nbsp;
+
+&nbsp;
+
 1. Run this aws cli command with your api key to store it in Paremeter store
    
 ```bash
@@ -106,6 +110,11 @@ aws ssm put-parameter --name "nba-api-key" --value "<Your_API_KEY_Here>" --type 
 
 
 ### **Run Terraform commands**
+
+&nbsp;
+
+&nbsp;
+
 1. Initialize Terraform directory, provider plugins and set up local backend
    
 ```bash
@@ -164,6 +173,11 @@ terraform apply
 
 
 ### **Add Subscriptions to the SNS Topic**
+
+&nbsp;
+
+&nbsp;
+
 1. After creating the topic, sign into AWS and head on the SNS topic name.
 
    ![image](https://github.com/user-attachments/assets/15489f06-9059-4862-a2b2-02415e4ef8bc)
@@ -183,20 +197,78 @@ terraform apply
 - For Email:
   - Choose Email.
   - Enter a valid email address.
-- For SMS (phone number):
+- For SMS (phone number): (not required, I only selected email)
   - Choose SMS.
   - Enter a valid phone number in international format (e.g., +1234567890).
 
+![image](https://github.com/user-attachments/assets/e1728125-4368-477a-985f-2adf2fe9ef57)
+
+![image](https://github.com/user-attachments/assets/59f1f5dc-3469-4a60-88db-a2ec38dbac98)
+
+
+
 4. Click Create Subscription.
+
+![image](https://github.com/user-attachments/assets/9516abdc-7f49-4e3f-bd65-2aea697a60f1)
+
+
+   
 5. If you added an Email subscription:
 - Check the inbox of the provided email address.
 - Confirm the subscription by clicking the confirmation link in the email.
+- You will recieve a confirmation reciept.
+
+![image](https://github.com/user-attachments/assets/85ebb6e0-d956-40fd-85be-747b8bb7cd11)
+
+![image](https://github.com/user-attachments/assets/aed18409-e44a-447d-b0b0-432c4835b217)
+
+![image](https://github.com/user-attachments/assets/d21b81dd-65eb-4683-9a00-f06dd9622a9a)
+
+6. Refresh the browser that is displaying the subcription, you can verify it was confirmed.
+
+![image](https://github.com/user-attachments/assets/b7ad0bf4-d36b-482d-9cf9-ecef70c58aa7)
+
+
 
 ### **Test the System**
-1. Open the Lambda function in the AWS Management Console.
+
+&nbsp;
+
+&nbsp;
+
+1. Open the Lambda function in the AWS search bar.
+
+
+![image](https://github.com/user-attachments/assets/6ccca890-5342-4f7b-91eb-92a7da6ed07a)
+
+
 2. Create a test event to simulate execution.
-3. Run the function and check CloudWatch Logs for errors.
-4. Verify that SMS notifications are sent to the subscribed users.
+  
+  - Click the most recent function created.
+
+![image](https://github.com/user-attachments/assets/2e895589-f161-4766-ba3e-9a22cc8541c3)
+
+  
+  - Scroll down to "Test" tab.
+
+![image](https://github.com/user-attachments/assets/c48572fb-5c2b-441b-ab49-4967d477823c)
+
+  - Select "Create new event" and enter a "Event name".
+
+![image](https://github.com/user-attachments/assets/47654e64-8c1b-42c2-9c72-30699ffd1d5d)
+
+
+3. Test the function and check CloudWatch Logs for errors.
+
+   - A green page with a message displays "Executing functions: succeeded".
+   - If it is not successful, a red screen will be displayed stating it was unsuccessful. 
+
+   ![image](https://github.com/user-attachments/assets/8fe68b5b-d374-4b1a-8926-36ba07bb6438)
+
+
+
+
+5. Verify that SMS notifications are sent to the subscribed users.
 
 
 
