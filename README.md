@@ -52,7 +52,7 @@
 
 ---
 
-### **Steps:** ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/MJaloui/GameDayNotificationswithTerraform/blob/main/VisualStepsHere) ❗⬅️
+### **Steps:** ➡️❗ [Click Here To View Detailed Visual Steps](https://github.com/MJaloui/Game-Day-Notifications-with-Terraform/blob/main/VisualStepsHere) ❗⬅️
 
 
 
