@@ -1,5 +1,8 @@
 # **Game Day Notifications -W- Terraform**
 
+![image](https://github.com/user-attachments/assets/d3bf1dd1-7e46-4cc2-89e0-2866901acf75)
+
+
 
 
 ## **🔷 Project Highlights 🔷**
